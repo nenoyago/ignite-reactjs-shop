@@ -1,0 +1,28 @@
+import { globalCss } from '.';
+
+export const globalStyles = globalCss({
+  '*': {
+    margin: 0,
+    padding: 0,
+    boxSizing: 'border-box',
+  },
+  body: {
+    backgroundColor: '$gray900',
+    color: '$gray100',
+    '-webkit-font-smoothing': 'antialised',
+  },
+  'body, input, textarea, button': {
+    fontFamily: 'Roboto, sans-serif',
+    fontWeight: 400,
+  },
+  a: {
+    color: 'inherit',
+    textDecoration: 'none',
+  },
+  button: {
+    '&:disabled': {
+      cursor: 'not-allowed !important',
+      opacity: 0.6,
+    },
+  },
+});
